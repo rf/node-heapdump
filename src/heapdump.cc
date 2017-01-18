@@ -125,7 +125,7 @@ inline bool WriteSnapshotHelper(Isolate* isolate, const char* filename) {
   // Work around a deficiency in the API.  The HeapSnapshot object is const
   // but we cannot call HeapProfiler::DeleteAllHeapSnapshots() because that
   // invalidates _all_ snapshots, including those created by other tools.
-  const_cast<HeapSnapshot*>(snap)->Delete();
+  //const_cast<HeapSnapshot*>(snap)->Delete();
   return true;
 }
 
