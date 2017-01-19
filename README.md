@@ -1,7 +1,11 @@
-node-heapdump
+rf-node-heapdump
 ===
 
 Make a dump of the V8 heap for later inspection.
+
+This is a modified version which does not fork or delete the snapshot, so
+diffing in the chrome inspector should work. Expect to see much higher
+memory usage.
 
 ### Install
 
